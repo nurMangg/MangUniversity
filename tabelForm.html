@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Mahasiswa | Nur Rohman</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="text-center pt-5 pb-5">Tabel Mahasiswa</h1>
+                <form name="datapribadi" method="" action="">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="exampleFormControlInput1"
+                            placeholder="Masukkan nama lengkap kamu....">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Jenis Kelamin</label>
+                        <select class="form-control" name="jenisK" id="exampleFormControlSelect1">
+                            <option>Laki-Laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="programS" id="exampleRadios2"
+                                value="Teknik Informatika">
+                            <label class="form-check-label" for="exampleRadios2">Teknik Informatika</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="programS" id="exampleRadios2"
+                                value="Sistem Informasi">
+                            <label class="form-check-label" for="exampleRadios2">Sistem Informasi</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="programS" id="exampleRadios2"
+                                value="Teknik Komputer">
+                            <label class="form-check-label" for="exampleRadios2">Teknik Komputer</label>
+                        </div>
+                    </div>
+                    <div class="form-group pt-5">
+                        <button type="button" onClick='inputdata()' class="btn btn-success">Simpan</button>
+                        <button type="reset" class="btn btn-warning">Batal</button>
+                    </div>
+                    <div class="row pt-2">
+                        <table class="table" id="databel">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Jenis Kelamin</th>
+                                    <th scope="col">Program Studi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="col">Nur Rohman</td>
+                                    <td scope="col">Laki-Laki</td>
+                                    <td scope="col">Teknik Informatika</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
